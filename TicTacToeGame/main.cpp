@@ -4,13 +4,12 @@
 #include <iostream>
 
 #include <string>
-#include<fstream>
+#include <fstream>
 #include <algorithm>
 #include <vector>
 #include <array>
 
 #include"TicTacToeField.h"
-
 #include"TicTacToeGame.h"
 
 using namespace std;
@@ -28,7 +27,6 @@ int main(){
     TicTacToeGame game(player1, player2);
 
     cout << game.getFieldStr() << endl;
-
 
     while (!game.isFinisched()) {
 
