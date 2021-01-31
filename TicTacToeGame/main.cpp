@@ -14,6 +14,9 @@
 
 using namespace std;
 
+auto zahlRowCol = 3;
+
+
 int main(){
 
     string player1, player2;
@@ -36,9 +39,9 @@ int main(){
 
         cin >> row >> col;
 
-        if (row >=3 || col >=3 ) {
+        if (row >= zahlRowCol || col >= zahlRowCol) {
 
-            cout << "Bitte geben Sie kleine Zahl als 3" << endl;
+            cout << "Bitte geben Sie kleine Zahl als "<< zahlRowCol << endl;
 
         }
         else {
