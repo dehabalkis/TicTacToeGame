@@ -8,12 +8,17 @@
 
 using namespace std;
 
-
 TicTacToeField::TicTacToeField(){
 
-    field.push_back({ 0, 0, 0 });
-    field.push_back({ 0, 0, 0 });
-    field.push_back({ 0, 0, 0 });
+    //field.push_back({ 0, 0, 0 });
+    //field.push_back({ 0, 0, 0 });
+    //field.push_back({ 0, 0, 0 });
+
+    for (int i = 0; i <=2 ; ++i) {
+
+        field.push_back({ 0, 0, 0 });
+
+    }
 
 }
 
