@@ -14,12 +14,14 @@
 
 using namespace std;
 
-auto zahlRowCol = 3;
+auto zahlRowCol = 21;
 
 
 int main(){
 
     string player1, player2;
+
+    int roww , coll;
 
     cout << "Bitte schreiben Sie das Name des erste Spieler =>  ";
     cin >> player1;

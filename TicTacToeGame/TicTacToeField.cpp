@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <list>
 #include <iostream>
 #include <sstream>
 
@@ -8,18 +9,20 @@
 
 using namespace std;
 
+
 TicTacToeField::TicTacToeField(){
 
     //field.push_back({ 0, 0, 0 });
     //field.push_back({ 0, 0, 0 });
     //field.push_back({ 0, 0, 0 });
 
-    for (int i = 0; i <=2 ; ++i) {
-
-        field.push_back({ 0, 0, 0 });
-
+    for (int j = 0; j <= rowZahl; ++j) {
+        v1.push_back(0);
     }
 
+    for (int i = 0; i <=colZahl ; ++i) {
+        field.push_back(v1);
+    }
 }
 
 TicTacToeField::TicTacToeField(vector<vector<int>> &field) {
@@ -27,8 +30,6 @@ TicTacToeField::TicTacToeField(vector<vector<int>> &field) {
     this->field = field;
 
     //ich bin der Constructor, dem die Variable field uebergeben wird
-
-
 }
 
 int TicTacToeField::calculateWinner() {
